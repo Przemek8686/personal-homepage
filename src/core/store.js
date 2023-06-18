@@ -7,13 +7,13 @@ import portfolioSlice from "../features/personalHomepage/Portfolio/portfolioSlic
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
-    reducer: {
-        theme: themeSlice,
-        portfolio: portfolioSlice,
-    },
-    middleware: [sagaMiddleware]
+  reducer: {
+    theme: themeSlice,
+    portfolio: portfolioSlice,
+  },
+  middleware: [sagaMiddleware],
 });
 
-sagaMiddleware.run(rootSaga)
+sagaMiddleware.run(rootSaga);
 
 export default store;

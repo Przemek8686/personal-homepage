@@ -1,4 +1,6 @@
 {
     "editor.formatOnPaste": false,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "modifications",
+    "eslint.codeActionsOnSave.rules": null
 }

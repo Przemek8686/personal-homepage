@@ -9,35 +9,25 @@ import SkillsList from "../../features/personalHomepage/Skills";
 import Portfolio from "../../features/personalHomepage/Portfolio";
 import Footer from "../../features/personalHomepage/Footer";
 import {
-    nextSkills,
-    skillsList,
+  nextSkills,
+  skillsList,
 } from "../../features/personalHomepage/Skills/skillsData";
 
 function App() {
-    const inDarkMode = useSelector(selectIsDarkTheme);
+  const inDarkMode = useSelector(selectIsDarkTheme);
 
-    return ( <
-        ThemeProvider theme = { inDarkMode ? darkTheme : lightTheme } >
-        <
-        GlobalStyle / >
-        <
-        Container >
-        <
-        SectionHeader / >
-        <
-        SkillsList tittle = "My skillset includes 🛠"
-        skills = { skillsList }
-        />{" "} <
-        SkillsList tittle = "What I want to learn next 🚀"
-        skills = { nextSkills }
-        />{" "} <
-        Portfolio / >
-        <
-        Footer / >
-        <
-        /Container>{" "} <
-        /ThemeProvider>
-    );
+  return (
+    <ThemeProvider theme={inDarkMode ? darkTheme : lightTheme}>
+      <GlobalStyle />
+      <Container>
+        <SectionHeader />
+        <SkillsList tittle="My skillset includes 🛠" skills={skillsList} />{" "}
+        <SkillsList tittle="What I want to learn next 🚀" skills={nextSkills} />{" "}
+        <Portfolio />
+        <Footer />
+      </Container>{" "}
+    </ThemeProvider>
+  );
 }
 
 export default App;
