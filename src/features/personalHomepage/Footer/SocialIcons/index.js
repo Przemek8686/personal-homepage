@@ -1,8 +1,8 @@
 import { socials } from "./social";
-import { Link, List, ListItem, } from "./styled";
+import { Link, List, ListItem } from "./styled";
 
 const SocialIcons = () => ( <
-    List > {
+    List > { " " } {
         socials.map(({ Icon, name, url }) => ( <
             ListItem key = { name } >
             <
@@ -10,10 +10,10 @@ const SocialIcons = () => ( <
             <
             Icon / >
             <
-            /Link> <
+            /Link>{" "} <
             /ListItem>
         ))
-    } <
+    } { " " } <
     /List>
 );
 

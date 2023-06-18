@@ -4,7 +4,7 @@ import { darkTheme, lightTheme } from "./theme";
 import { selectIsDarkTheme } from "../../features/personalHomepage/ThemeSwitch/themeSlice";
 import { useSelector } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
-import SectionHeader from "../../features/personalHomepage/sectionHeaderHeader";
+import SectionHeader from "../../features/personalHomepage/SectionHeader";
 import Footer from "../../features/personalHomepage/Footer";
 import Portfolio from "../../features/personalHomepage/Portfolio";
 import SkillsList from "../../features/personalHomepage/Skills";
