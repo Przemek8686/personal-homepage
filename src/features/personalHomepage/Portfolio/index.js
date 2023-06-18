@@ -11,7 +11,7 @@ const Portfolio = () => {
     const status = useSelector(selectStatus);
 
     useEffect(() => {
-        dispatch((fetchPortfolioLoading()))
+        dispatch(fetchPortfolioLoading());
     }, [dispatch]);
 
     return ( <
@@ -19,18 +19,15 @@ const Portfolio = () => {
         <
         PortfolioIcon / >
         <
-        Header > Portfolio < /Header> <
-        Paragraph > My recent projects < /Paragraph> {
-            status === "loading" ?
-                <
+        Header > Portfolio < /Header> <Paragraph> My recent projects </Paragraph > { " " } {
+            status === "loading" ? ( <
                 Loading / >
-                :
-                status === "success" ?
-                <
-                RepositoriesList / > :
-                <
+            ) : status === "success" ? ( <
+                RepositoriesList / >
+            ) : ( <
                 Error / >
-        } <
+            )
+        } { " " } <
         /Wrapper>
     );
 };
