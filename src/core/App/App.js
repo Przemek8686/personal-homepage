@@ -27,15 +27,15 @@ function App() {
         <
         SkillsList tittle = "My skillset includes 🛠"
         skills = { skillsList }
-        /> <
+        />{" "} <
         SkillsList tittle = "What I want to learn next 🚀"
         skills = { nextSkills }
-        /> <
+        />{" "} <
         Portfolio / >
         <
         Footer / >
         <
-        /Container> <
+        /Container>{" "} <
         /ThemeProvider>
     );
 }
